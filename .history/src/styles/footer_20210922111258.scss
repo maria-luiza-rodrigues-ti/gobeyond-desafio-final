@@ -125,14 +125,10 @@
 
     background-color: #f4f4f4;
 
-    display: flex;
     flex-direction: row;
 
     padding-left: 4rem;
     padding-right: 4rem;
-
-    padding-top: 2rem;
-    padding-bottom: 2rem;
 
     .local-container{
       margin-left: 2rem;
@@ -142,28 +138,6 @@
       padding-right: 0;
 
       width: 25%;
-
-      h2 {
-        font-family: Circular Std Medium;
-        font-weight: 100;
-
-        display: block;
-        font-size: 1.5em;
-        margin-block-start: 0.83em;
-        margin-block-end: 0.83em;
-        margin-inline-start: 0px;
-        margin-inline-end: 0px;
-      }
-
-      p {
-        font-family: Circular Std Book;
-
-        display: block;
-        margin-block-start: 1em;
-        margin-block-end: 1em;
-        margin-inline-start: 0px;
-        margin-inline-end: 0px;
-      }
     }
   }
 }

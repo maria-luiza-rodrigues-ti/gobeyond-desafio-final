@@ -46,7 +46,7 @@ function Footer() {
         </div>
         <div className="link-container">
           <div className="link-content">
-            <ul className='list-container'>
+            <ul>
               <li>
                 <a
                   href="https://www.corebiz.ag/pt/about/"
@@ -87,24 +87,24 @@ function Footer() {
           </div>
         </div>
       </div>
-      <div className='right-container'>
-        <div className='local-container'>
+      <div>
+        <div>
           <h2>.Brasil</h2>
           <p>Avenida Andrômeda, 2000. Bloco 6 e 8 Alphaville SP</p>
           <p>R. Ifigenia Maria de Oliveira, 3793 Jr. Paratininga Franca SP</p>
         </div>
-        <div className='local-container'>
+        <div>
           <h2>.Argentina</h2>
           <p>Soler 5518, 3 Piso C1425BYF Palermo Hollywood</p>
         </div>
-        <div className='local-container'>
+        <div>
           <h2>.México</h2>
           <p>
             Blvd. Miguel de Cervantes Saavedra 169, Granada, Miguel Hidalgo,
             11520 Ciudad de México, CDMX
           </p>
         </div>
-        <div className='local-container'>
+        <div>
           <h2>.Chile</h2>
           <p>Roberto del Río 1137, Providencia.</p>
         </div>
