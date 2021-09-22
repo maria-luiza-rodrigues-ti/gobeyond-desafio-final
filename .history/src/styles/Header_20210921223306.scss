@@ -1,0 +1,19 @@
+.header-container {
+  padding: 2rem 4rem;
+  background-color: #000;
+  color: #fff;
+
+  .header-content {
+    display: flex;
+    width: 100%;
+
+    .logo {
+      display: block 
+      
+    
+      .logo img {
+        width: 170px;
+      }
+    }
+  }
+}

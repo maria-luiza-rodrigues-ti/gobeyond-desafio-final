@@ -9,40 +9,34 @@ import "../styles/footer.scss";
 
 function Footer() {
   return (
-    <div className="footer-container">
-      <div className="left-container">
+    <div className='footer-container'>
+      <div>
         <div className="corebiz-container">
           <img src={CorebizPreto} alt="Logo Corebiz" />
-          <p>diretos.reservados.corebiz 2021</p>
-          <ul className="social-container">
-            <li className='menu-item'>
-              <a
-                href="https://www.facebook.com/corebiz.ag/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <img src={Facebook} alt="Facebook" />
-              </a>
-            </li>
-            <li className='menu-item'>
-              <a
-                href="https://www.instagram.com/corebizag/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <img src={Instagram} alt="Facebook" />
-              </a>
-            </li>
-            <li className='menu-item'>
-              <a
-                href="https://www.linkedin.com/company/corebiz-brasil/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <img src={Linkedin} alt="Facebook" />
-              </a>
-            </li>
-          </ul>
+          <h4>diretos.reservados.corebiz 2021</h4>
+          <div className="social-container">
+            <a
+              href="https://www.facebook.com/corebiz.ag/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img src={Facebook} alt="Facebook" />
+            </a>
+            <a
+              href="https://www.instagram.com/corebizag/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img src={Instagram} alt="Facebook" />
+            </a>
+            <a
+              href="https://www.linkedin.com/company/corebiz-brasil/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img src={Linkedin} alt="Facebook" />
+            </a>
+          </div>
         </div>
         <div>
           <ul>
@@ -97,10 +91,7 @@ function Footer() {
         </div>
         <div>
           <h2>.México</h2>
-          <p>
-            Blvd. Miguel de Cervantes Saavedra 169, Granada, Miguel Hidalgo,
-            11520 Ciudad de México, CDMX
-          </p>
+          <p>Blvd. Miguel de Cervantes Saavedra 169, Granada, Miguel Hidalgo, 11520 Ciudad de México, CDMX</p>
         </div>
         <div>
           <h2>.Chile</h2>

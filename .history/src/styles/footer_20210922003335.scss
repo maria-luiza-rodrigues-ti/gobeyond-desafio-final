@@ -21,6 +21,7 @@
 
     .corebiz-container {
       width: 50%;
+      flex-direction: column;
 
       img {
         width: 115px;
@@ -36,19 +37,17 @@
       }
 
       .social-container {
-        display: flex;
+          display:flex
         flex-direction: row;
 
-        padding: 1rem 0;
+        margin-top: auto;
+        padding-bottom: 1rem;
 
         .menu-item {
           list-style-type: none;
 
           a {
-
-            padding-right: 1rem;
-
-            transition: color 0.15s ease-in;
+            transition: color .15s ease-in;
 
             opacity: 1;
 
@@ -57,10 +56,10 @@
             background-color: transparent;
 
             img {
-              height: 14px;
-              width:100%;
+               width: 12px; 
             }
           }
+
         }
       }
     }

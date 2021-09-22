@@ -21,6 +21,7 @@
 
     .corebiz-container {
       width: 50%;
+      flex-direction: column;
 
       img {
         width: 115px;
@@ -33,35 +34,6 @@
       p {
         font-family: Circular Std Book;
         text-transform: lowercase;
-      }
-
-      .social-container {
-        display: flex;
-        flex-direction: row;
-
-        padding: 1rem 0;
-
-        .menu-item {
-          list-style-type: none;
-
-          a {
-
-            padding-right: 1rem;
-
-            transition: color 0.15s ease-in;
-
-            opacity: 1;
-
-            text-decoration: none;
-
-            background-color: transparent;
-
-            img {
-              height: 14px;
-              width:100%;
-            }
-          }
-        }
       }
     }
   }

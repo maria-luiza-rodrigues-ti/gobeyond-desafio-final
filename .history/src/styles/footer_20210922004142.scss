@@ -39,15 +39,13 @@
         display: flex;
         flex-direction: row;
 
+        margin-top: auto;
         padding: 1rem 0;
 
         .menu-item {
           list-style-type: none;
 
           a {
-
-            padding-right: 1rem;
-
             transition: color 0.15s ease-in;
 
             opacity: 1;

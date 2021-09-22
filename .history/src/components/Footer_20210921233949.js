@@ -9,40 +9,34 @@ import "../styles/footer.scss";
 
 function Footer() {
   return (
-    <div className="footer-container">
-      <div className="left-container">
+    <div>
+      <div>
         <div className="corebiz-container">
           <img src={CorebizPreto} alt="Logo Corebiz" />
-          <p>diretos.reservados.corebiz 2021</p>
-          <ul className="social-container">
-            <li className='menu-item'>
-              <a
-                href="https://www.facebook.com/corebiz.ag/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <img src={Facebook} alt="Facebook" />
-              </a>
-            </li>
-            <li className='menu-item'>
-              <a
-                href="https://www.instagram.com/corebizag/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <img src={Instagram} alt="Facebook" />
-              </a>
-            </li>
-            <li className='menu-item'>
-              <a
-                href="https://www.linkedin.com/company/corebiz-brasil/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <img src={Linkedin} alt="Facebook" />
-              </a>
-            </li>
-          </ul>
+          <h4>diretos.reservados.corebiz 2021</h4>
+          <div className="social-container">
+            <a
+              href="https://www.facebook.com/corebiz.ag/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img src={Facebook} alt="Facebook" />
+            </a>
+            <a
+              href="https://www.instagram.com/corebizag/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img src={Instagram} alt="Facebook" />
+            </a>
+            <a
+              href="https://www.linkedin.com/company/corebiz-brasil/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img src={Linkedin} alt="Facebook" />
+            </a>
+          </div>
         </div>
         <div>
           <ul>
@@ -87,23 +81,16 @@ function Footer() {
       </div>
       <div>
         <div>
-          <h2>.Brasil</h2>
+          <h2>".Brasil"</h2>
           <p>Avenida Andrômeda, 2000. Bloco 6 e 8 Alphaville SP</p>
           <p>R. Ifigenia Maria de Oliveira, 3793 Jr. Paratininga Franca SP</p>
         </div>
         <div>
-          <h2>.Argentina</h2>
+          <h2>".Argentina"</h2>
           <p>Soler 5518, 3 Piso C1425BYF Palermo Hollywood</p>
         </div>
         <div>
-          <h2>.México</h2>
-          <p>
-            Blvd. Miguel de Cervantes Saavedra 169, Granada, Miguel Hidalgo,
-            11520 Ciudad de México, CDMX
-          </p>
-        </div>
-        <div>
-          <h2>.Chile</h2>
+          <h2>".Chile"</h2>
           <p>Roberto del Río 1137, Providencia.</p>
         </div>
       </div>

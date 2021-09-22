@@ -39,27 +39,23 @@
         display: flex;
         flex-direction: row;
 
-        padding: 1rem 0;
+        margin-top: auto;
+        padding-bottom: 1rem;
 
-        .menu-item {
-          list-style-type: none;
+        a {
+          transition: color 0.15s ease-in;
 
-          a {
+          opacity: 1;
 
-            padding-right: 1rem;
+          text-decoration: none;
 
-            transition: color 0.15s ease-in;
+          background-color: transparent;
 
-            opacity: 1;
-
-            text-decoration: none;
-
-            background-color: transparent;
-
-            img {
-              height: 14px;
-              width:100%;
-            }
+          img {
+            width: 12px;
+          }
+          .menu-item {
+            list-style-type: none;
           }
         }
       }

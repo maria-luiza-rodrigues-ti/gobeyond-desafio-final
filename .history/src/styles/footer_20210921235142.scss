@@ -1,0 +1,24 @@
+.footer-container{
+    display: flex;
+    flex-direction: row;
+
+    font-size: .75rem;
+
+    .left-container{
+        display: flex;
+        flex-direction: row;
+
+        position: relative;
+
+        padding-left: 4rem;
+        padding-right: 2rem;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+
+        width: 33%;
+
+        font-size: .75rem;
+
+
+    }
+}

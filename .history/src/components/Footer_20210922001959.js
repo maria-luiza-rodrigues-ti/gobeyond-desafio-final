@@ -15,7 +15,7 @@ function Footer() {
           <img src={CorebizPreto} alt="Logo Corebiz" />
           <p>diretos.reservados.corebiz 2021</p>
           <ul className="social-container">
-            <li className='menu-item'>
+            <li>
               <a
                 href="https://www.facebook.com/corebiz.ag/"
                 target="_blank"
@@ -24,7 +24,7 @@ function Footer() {
                 <img src={Facebook} alt="Facebook" />
               </a>
             </li>
-            <li className='menu-item'>
+            <li>
               <a
                 href="https://www.instagram.com/corebizag/"
                 target="_blank"
@@ -33,7 +33,7 @@ function Footer() {
                 <img src={Instagram} alt="Facebook" />
               </a>
             </li>
-            <li className='menu-item'>
+            <li>
               <a
                 href="https://www.linkedin.com/company/corebiz-brasil/"
                 target="_blank"
