@@ -1,0 +1,39 @@
+// colors
+$color-white: rgb(255, 255, 255);
+$color-lighthouse: rgb(244, 244, 244);
+$color-black: rgb(0, 0, 0);
+
+// typography 
+$font-1: normal normal 100 48px/52.8px "Circular Std Medium";
+$font-2: normal normal 100 19.2px/22.08px "Circular Std Medium";
+$font-3: normal normal 400 16px/18.4px "Times New Roman";
+$font-4: normal normal 400 16px/18.4px "Times New Roman";
+$font-5: normal normal 100 16px/18.4px "Circular Std Medium";
+$font-6: normal normal 400 12px/13.8px "Times New Roman";
+$font-7: normal normal 400 12px/13.8px "Circular Std Book";
+
+// vertical spacing
+$vspace-1: 5px;
+$vspace-2: 0.5rem;
+$vspace-3: 0.7em;
+$vspace-4: 1rem;
+$vspace-5: 17px;
+$vspace-6: 1.3em;
+$vspace-7: 2rem;
+$vspace-8: 40px;
+
+// horizontal spacing
+$hspace-1: 0.5rem;
+$hspace-2: 11px;
+$hspace-3: 1rem;
+$hspace-4: 20px;
+$hspace-5: 2rem;
+
+// border radii
+$border-radius-1: 10px;
+$border-radius-2: 2.5px;
+$border-radius-3: 50px;
+
+// motions
+$transition-1: color 0.15s ease-in 0s;
+$transition-2: opacity 0.15s ease-in 0s;
