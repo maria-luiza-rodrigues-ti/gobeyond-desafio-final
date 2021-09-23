@@ -48,10 +48,8 @@
     }
 
     .thumb-container {
-      display: flex;
-      flex-direction: row;
-
-      margin: 40px 0 40px;
+      margin: auto 0 40px;
+      display: block;
 
       .thumb {
         border: 3px solid #fff;
@@ -61,7 +59,6 @@
         overflow: hidden;
 
         width: 25%;
-
       }
     }
   }

@@ -1,0 +1,15 @@
+.button-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    height: 50px;
+    max-width: 195px;
+    width: 100%;
+
+    transition: color .15s ease-in;
+
+    border-radius: 50px;
+
+
+}

@@ -48,21 +48,10 @@
     }
 
     .thumb-container {
-      display: flex;
-      flex-direction: row;
+        margin: auto 0 40px;
+        display: block;
 
-      margin: 40px 0 40px;
-
-      .thumb {
-        border: 3px solid #fff;
-        margin-right: 11px;
-
-        border-radius: 2.5px;
-        overflow: hidden;
-
-        width: 25%;
-
-      }
+        background-color: #fff;
     }
   }
 }

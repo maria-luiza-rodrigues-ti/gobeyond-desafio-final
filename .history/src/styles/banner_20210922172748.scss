@@ -1,0 +1,18 @@
+.banner-container {
+  display: flex;
+  flex-direction: row;
+
+  padding-left: 4rem;
+  padding-right: 4rem;
+  padding-bottom: 2rem;
+
+  background-color: #000;
+  color: #fff;
+
+  .left-container {
+
+    a {
+        text-decoration: none;
+    }
+  }
+}
