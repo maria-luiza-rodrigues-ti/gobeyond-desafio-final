@@ -105,8 +105,8 @@
     padding-right: 1rem;
     padding-bottom: 10rem;
 
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
 
     width: 100vw;
     height: fit-content;
