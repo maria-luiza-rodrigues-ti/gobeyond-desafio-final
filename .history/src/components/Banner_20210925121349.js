@@ -11,10 +11,10 @@ const api = axios.create({
 
 function Banner() {
   const [image, setImage] = useState([
-    { id: "", thumbUrl: "", title: "", url: "", adress: Number},
-    { id: "", thumbUrl: "", title: "", url: "", adress: Number},
-    { id: "", thumbUrl: "", title: "", url: "", adress: Number},
-    { id: "", thumbUrl: "", title: "", url: "", adress: Number},
+    { id: "", adress: Number, thumbUrl: "", title: "", url: "" },
+    { id: "", adress: Number, thumbUrl: "", title: "", url: "" },
+    { id: "", adress: Number, thumbUrl: "", title: "", url: "" },
+    { id: "", adress: Number, thumbUrl: "", title: "", url: "" },
   ]);
 
   const [index, setIndex] = useState(0);
@@ -23,7 +23,7 @@ function Banner() {
     async function getData() {
       const res = await api.get("/items");
 
-      setImage(res.data.Items);
+      setImage(res.data.items);
 
       console.log(res.data.Items);
     }
@@ -39,31 +39,31 @@ function Banner() {
           <Button />
         </a>
         <div className="thumb-container">
-          <button className="button-thumb" onClick={() => setIndex(0)}>
-            <img
-              className={index === 0 ? "active" : "normal"}
-              src={image[0].thumbUrl}
-              alt="Thumbnail 1"
-            />
-          </button>
           <button className="button-thumb" onClick={() => setIndex(1)}>
             <img
               className={index === 1 ? "active" : "normal"}
               src={image[1].thumbUrl}
-              alt="Thumbnail 2"
+              alt="Thumbnail 1"
             />
           </button>
           <button className="button-thumb" onClick={() => setIndex(2)}>
             <img
               className={index === 2 ? "active" : "normal"}
               src={image[2].thumbUrl}
-              alt="Thumbnail 3"
+              alt="Thumbnail 2"
             />
           </button>
           <button className="button-thumb" onClick={() => setIndex(3)}>
             <img
               className={index === 3 ? "active" : "normal"}
               src={image[3].thumbUrl}
+              alt="Thumbnail 3"
+            />
+          </button>
+          <button className="button-thumb" onClick={() => setIndex(4)}>
+            <img
+              className={index === 4 ? "active" : "normal"}
+              src={image[4].thumbUrl}
               alt="Thumbnail 4"
             />
           </button>

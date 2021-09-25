@@ -11,19 +11,19 @@ const api = axios.create({
 
 function Banner() {
   const [image, setImage] = useState([
-    { id: "", thumbUrl: "", title: "", url: "", adress: Number},
-    { id: "", thumbUrl: "", title: "", url: "", adress: Number},
-    { id: "", thumbUrl: "", title: "", url: "", adress: Number},
-    { id: "", thumbUrl: "", title: "", url: "", adress: Number},
+    { id: "", adress: Number, thumbUrl: "", title: "", url: "" },
+    { id: "", adress: Number, thumbUrl: "", title: "", url: "" },
+    { id: "", adress: Number, thumbUrl: "", title: "", url: "" },
+    { id: "", adress: Number, thumbUrl: "", title: "", url: "" },
   ]);
 
-  const [index, setIndex] = useState(0);
+  const [indice, setIndice] = useState(0);
 
   useEffect(() => {
     async function getData() {
       const res = await api.get("/items");
 
-      setImage(res.data.Items);
+      setImage(res.data.items);
 
       console.log(res.data.Items);
     }
@@ -34,35 +34,35 @@ function Banner() {
   return (
     <div className="banner-container">
       <div className="left-container">
-        <h2>{image[index].title}</h2>
+        <h2>{image[indice].title}</h2>
         <a href="https://www.corebiz.ag/pt/" target="_blank" rel="noreferrer">
           <Button />
         </a>
         <div className="thumb-container">
-          <button className="button-thumb" onClick={() => setIndex(0)}>
+          <button className="button-thumb" onClick={() => setIndice(0)}>
             <img
-              className={index === 0 ? "active" : "normal"}
+              className={indice === 0 ? "active" : "normal"}
               src={image[0].thumbUrl}
               alt="Thumbnail 1"
             />
           </button>
-          <button className="button-thumb" onClick={() => setIndex(1)}>
+          <button className="button-thumb" onClick={() => setIndice(1)}>
             <img
-              className={index === 1 ? "active" : "normal"}
+              className={indice === 1 ? "active" : "normal"}
               src={image[1].thumbUrl}
               alt="Thumbnail 2"
             />
           </button>
-          <button className="button-thumb" onClick={() => setIndex(2)}>
+          <button className="button-thumb" onClick={() => setIndice(2)}>
             <img
-              className={index === 2 ? "active" : "normal"}
+              className={indice === 2 ? "active" : "normal"}
               src={image[2].thumbUrl}
               alt="Thumbnail 3"
             />
           </button>
-          <button className="button-thumb" onClick={() => setIndex(3)}>
+          <button className="button-thumb" onClick={() => setIndice(3)}>
             <img
-              className={index === 3 ? "active" : "normal"}
+              className={indice === 3 ? "active" : "normal"}
               src={image[3].thumbUrl}
               alt="Thumbnail 4"
             />
@@ -70,7 +70,7 @@ function Banner() {
         </div>
       </div>
       <div className="right-container">
-        <img className="image-content" src={image[index].url} alt="Banner" />
+        <img className="image-content" src={image[indice].url} alt="Banner" />
       </div>
     </div>
   );

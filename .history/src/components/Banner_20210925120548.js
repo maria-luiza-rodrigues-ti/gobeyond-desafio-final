@@ -11,10 +11,10 @@ const api = axios.create({
 
 function Banner() {
   const [image, setImage] = useState([
-    { id: "", thumbUrl: "", title: "", url: "", adress: Number},
-    { id: "", thumbUrl: "", title: "", url: "", adress: Number},
-    { id: "", thumbUrl: "", title: "", url: "", adress: Number},
-    { id: "", thumbUrl: "", title: "", url: "", adress: Number},
+    { id: "", adress: Number, thumbUrl: "", title: "", url: "" },
+    { id: "", adress: Number, thumbUrl: "", title: "", url: "" },
+    { id: "", adress: Number, thumbUrl: "", title: "", url: "" },
+    { id: "", adress: Number, thumbUrl: "", title: "", url: "" },
   ]);
 
   const [index, setIndex] = useState(0);
@@ -23,7 +23,7 @@ function Banner() {
     async function getData() {
       const res = await api.get("/items");
 
-      setImage(res.data.Items);
+      setImage(res.data.items);
 
       console.log(res.data.Items);
     }
