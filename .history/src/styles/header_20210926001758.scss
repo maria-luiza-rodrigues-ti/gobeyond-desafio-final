@@ -11,15 +11,18 @@
       width: 170px;
     }
 
-    .menu-container {
-      margin-left: auto;
-      display: block;
+    .menu-list {
+      display: flex;
+      flex-direction: column;
 
-      .menu-list {
-        list-style-type: none;
+      .menu-container {
+        margin-left: auto;
+        
+        ul {
+          margin-left: auto;
+          list-style-type: none;
 
-        display:flex;
-        flex-direction: row;
+        }
 
         .menu-item {
           margin-left: 20px;

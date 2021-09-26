@@ -17,9 +17,9 @@
 
       .menu-list {
         list-style-type: none;
-
-        display:flex;
-        flex-direction: row;
+        margin-top: 0;
+        padding-left: 0;
+        padding-right: 0;
 
         .menu-item {
           margin-left: 20px;

@@ -16,10 +16,8 @@
       display: block;
 
       .menu-list {
+        margin-left: auto;
         list-style-type: none;
-
-        display:flex;
-        flex-direction: row;
 
         .menu-item {
           margin-left: 20px;

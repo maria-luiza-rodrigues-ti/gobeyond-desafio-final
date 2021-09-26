@@ -13,13 +13,12 @@
 
     .menu-container {
       margin-left: auto;
-      display: block;
+
+      flex-direction: column;
 
       .menu-list {
+        margin-left: auto;
         list-style-type: none;
-
-        display:flex;
-        flex-direction: row;
 
         .menu-item {
           margin-left: 20px;
