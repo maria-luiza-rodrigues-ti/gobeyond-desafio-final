@@ -11,13 +11,11 @@
       width: 170px;
     }
 
-    .menu.menuClose {
-      margin-left: auto;
 
       .menu-container {
+        margin-left: auto;
 
         ul {
-          margin-left: auto;
           list-style-type: none;
 
           display: flex;
@@ -53,7 +51,7 @@
           border-bottom-width: 1px;
         }
       }
-    }
+    
 
     .menu-icon {
       display: none;

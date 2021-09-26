@@ -11,13 +11,12 @@
       width: 170px;
     }
 
-    .menu.menuClose {
-      margin-left: auto;
+    .menu menuClose {
 
       .menu-container {
+        margin-left: auto;
 
         ul {
-          margin-left: auto;
           list-style-type: none;
 
           display: flex;

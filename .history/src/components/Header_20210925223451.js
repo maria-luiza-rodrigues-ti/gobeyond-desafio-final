@@ -58,7 +58,7 @@ function Header() {
             </ul>
           </div>
         </div>
-        <div className={active ? "icon iconActive" : "icon"} onClick={ToggleMode}>
+        <div className={active ? "icon iconActive" : "icon"}>
           <div className="hamburguer hamburguerIcon"></div>
         </div>
       </div>

@@ -14,11 +14,12 @@
     flex-direction: column;
 
     width: 35%;
-    padding-right: 5rem;
+
+    padding-right: 8rem;
 
     h2 {
       font-size: 50px;
-      height: auto;
+      height: 210px;
       line-height: 50px;
       margin: 1em 0 0.5em;
 
@@ -33,15 +34,10 @@
       margin-inline-start: 0px;
       margin-inline-end: 0px;
 
-      word-break: break-word;
-
       text-transform: capitalize;
     }
 
     a {
-      position: relative;
-
-      padding-bottom: 2rem;
       text-decoration: none;
     }
 
@@ -105,25 +101,24 @@
 @media screen and (max-width: 768px) {
 
   .banner-container{
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
     padding-bottom: 10rem;
 
     display: flex;
     flex-direction: column;
 
-    justify-content: center;
-    align-items: center;
-
-    width: 100%;
+    width: 100vw;
     height: fit-content;
 
     .left-container {
+      display: flex;
+      flex-direction:column;
+
       padding-right: 0;
 
       width: 100%;
-
-      word-wrap: break-word;
+      height: fit-content;
 
       h2 {
         margin: auto;
@@ -132,37 +127,13 @@
         padding: 0;
         line-height: 1.1;
         font-size: 2.5em;
-        
+        word-wrap: break-word;
         margin-bottom: .5em;
-
-        justify-content: center;
-        align-items: center;
       }
 
       a {
-        width:100%;
         text-decoration: none;
         margin-bottom: 1.25em;
-        white-space: normal;
-
-        justify-content: center;
-        align-items: center;
-
-      }
-
-      .thumb-container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 0;
-        width: 100%;
-        transform: translateY(660%);
-
-        .thumb-content{
-          display: flex;
-          justify-content: center;
-          align-items: center;
-        }
       }
     }
 
@@ -170,15 +141,6 @@
       display: flex;
       flex-direction:column;
       width: 100%;
-
-      justify-content: center;
-      align-items: center;
-
-      transform: translateY(-20%);
-
-      .image-container {
-        width: 100%;
-      }
     }
   }
 }

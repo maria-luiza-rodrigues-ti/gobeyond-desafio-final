@@ -11,47 +11,43 @@
       width: 170px;
     }
 
-    .menu.menuClose {
+    .menu-container {
       margin-left: auto;
 
-      .menu-container {
+      ul {
+        list-style-type: none;
 
-        ul {
-          margin-left: auto;
-          list-style-type: none;
+        display: flex;
+        flex-direction: row;
+      }
 
-          display: flex;
-          flex-direction: row;
+      .menu-item {
+        margin-left: 20px;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+
+        a {
+          font-family: Circular Std Medium;
+          font-weight: 100;
+          font-size: 1.4em;
+
+          text-transform: lowercase;
+          text-decoration: none;
+          color: #fff;
+          background-color: transparent;
         }
 
-        .menu-item {
-          margin-left: 20px;
-          padding-top: 0.5rem;
-          padding-bottom: 0.5rem;
-
-          a {
-            font-family: Circular Std Medium;
-            font-weight: 100;
-            font-size: 1.4em;
-
-            text-transform: lowercase;
-            text-decoration: none;
-            color: #fff;
-            background-color: transparent;
-          }
-
-          a:focus,
-          a:hover {
-            opacity: 0.5;
-            transition: opacity 0.15s ease-in;
-          }
+        a:focus,
+        a:hover {
+          opacity: 0.5;
+          transition: opacity 0.15s ease-in;
         }
+      }
 
-        .menu-item:focus,
-        .menu-item:hover {
-          border-bottom-style: solid;
-          border-bottom-width: 1px;
-        }
+      .menu-item:focus,
+      .menu-item:hover {
+        border-bottom-style: solid;
+        border-bottom-width: 1px;
       }
     }
 
@@ -67,7 +63,7 @@
     padding-right: 2rem;
     padding-top: 1rem;
 
-    .header-content {
+    .header-content{
       .menu-container {
         display: none;
       }
@@ -78,7 +74,7 @@
         background-color: #000;
         transition: all 0.5s ease-out;
         width: 100%;
-
+  
         .menu-item {
           text-align: center;
           width: 100%;
@@ -92,9 +88,10 @@
       position: absolute;
       color: #fff;
       font-size: 30px;
-      background-color: #000;
+      background-color:#000;
       border: none;
       outline: none;
+
     }
   }
 }
