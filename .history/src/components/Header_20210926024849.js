@@ -15,15 +15,7 @@ function Header() {
 
   useEffect(() => {
 
-    const changeWidth = () => {
-      setScreenWidth(window.innerWidth);
-    }
-
-    window.addEventListener('resize', changeWidth);
-
-    return () => {
-      window.removeEventListener('resize', changeWidth);
-    }
+    
 
   },[])
 

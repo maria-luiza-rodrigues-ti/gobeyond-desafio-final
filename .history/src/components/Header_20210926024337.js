@@ -7,37 +7,18 @@ import "../styles/header.scss";
 
 function Header() {
   const [toggleMenu, setToggleMenu] = useState(false);
-  const [screenWidth, setScreenWidth] = useState(window.innerWidth);
-
-  const toggleNav = () => {
-    setToggleMenu(!toggleMenu);
-  }
-
-  useEffect(() => {
-
-    const changeWidth = () => {
-      setScreenWidth(window.innerWidth);
-    }
-
-    window.addEventListener('resize', changeWidth);
-
-    return () => {
-      window.removeEventListener('resize', changeWidth);
-    }
-
-  },[])
 
   return (
     <div className="header-container">
       <div className="header-content">
         <div className="logo">
           <img src={CorebizTransp} alt="Logo Corebiz" />
-          <button className="button" onClick={toggleNav}>
+          <button className="button">
             <img src={Bars} className="menu-icon" alt="Menu-icon" />
           </button>
         </div>
         <div className="menu-container">
-          {(toggleMenu || screenWidth > 768) && (
+          {toggleMenu && (
             <ul className="menu-list">
               <li className="menu-item">
                 <a

@@ -7,25 +7,10 @@ import "../styles/header.scss";
 
 function Header() {
   const [toggleMenu, setToggleMenu] = useState(false);
-  const [screenWidth, setScreenWidth] = useState(window.innerWidth);
 
   const toggleNav = () => {
     setToggleMenu(!toggleMenu);
   }
-
-  useEffect(() => {
-
-    const changeWidth = () => {
-      setScreenWidth(window.innerWidth);
-    }
-
-    window.addEventListener('resize', changeWidth);
-
-    return () => {
-      window.removeEventListener('resize', changeWidth);
-    }
-
-  },[])
 
   return (
     <div className="header-container">
@@ -37,7 +22,7 @@ function Header() {
           </button>
         </div>
         <div className="menu-container">
-          {(toggleMenu || screenWidth > 768) && (
+          {toggleMenu && (
             <ul className="menu-list">
               <li className="menu-item">
                 <a

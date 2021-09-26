@@ -11,19 +11,9 @@
       img {
         width: 170px;
       }
-
-      .button {
-        display: none;
-        position: absolute;
-        right: 30px;
-        top: 30px;
-        color: #fff;
-        font-size: 18px;
-
-        img {
-          height: 20px;
-          width: 20px;
-        }
+      
+      .mobile-menu-icon {
+        display:none;
       }
     }
 
@@ -76,51 +66,26 @@
     padding-right: 2rem;
     padding-top: 1rem;
 
-    width: 100vw;
-
     .header-content {
-      display: flex;
-      flex-direction: column;
-
-      .logo {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-
-        .button{
-          display: block;
-
-          .menu-icon {
-            display: block;
-            background-color: #000;
-          }
-        }
-
-      }
-
       .menu-container {
-        position: relative;
-        list-style: none;
-        background-color: #000;
-        transition: all 0.5s ease-out;
-        width: 100%;
+        display: none;
 
-        .menu-list {
-          display: flex;
-          flex-direction: column;
-          height: auto;
-
-          .menu-item {
-            margin-left: 0;
-            text-align: center;
-            width: 100%;
-            transition: all 0.5s ease;
-            border-bottom-style: solid;
-            border-bottom-width: 1px;
-          }
+        .menu-item {
+          text-align: center;
+          width: 100%;
+          transition: all 0.5s ease;
         }
       }
     }
 
+    .menu-icon {
+      display: flex;
+      position: absolute;
+      color: #fff;
+      font-size: 30px;
+      background-color: #000;
+      border: none;
+      outline: none;
+    }
   }
 }

@@ -15,15 +15,11 @@
       .button {
         display: none;
         position: absolute;
-        right: 30px;
-        top: 30px;
-        color: #fff;
+        right: 10px;
+        top: 7px;
+        padding: 5px;
+        color: #000;
         font-size: 18px;
-
-        img {
-          height: 20px;
-          width: 20px;
-        }
       }
     }
 
@@ -88,11 +84,12 @@
         justify-content: space-between;
 
         .button{
-          display: block;
+          display: flex;
 
           .menu-icon {
-            display: block;
+            display: flex;
             background-color: #000;
+            width: 14px;
           }
         }
 
@@ -108,7 +105,6 @@
         .menu-list {
           display: flex;
           flex-direction: column;
-          height: auto;
 
           .menu-item {
             margin-left: 0;

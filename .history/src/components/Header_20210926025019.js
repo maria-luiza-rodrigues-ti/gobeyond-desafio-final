@@ -21,9 +21,7 @@ function Header() {
 
     window.addEventListener('resize', changeWidth);
 
-    return () => {
-      window.removeEventListener('resize', changeWidth);
-    }
+    
 
   },[])
 

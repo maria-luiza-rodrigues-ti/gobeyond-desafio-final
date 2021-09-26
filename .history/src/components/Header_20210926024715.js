@@ -13,20 +13,6 @@ function Header() {
     setToggleMenu(!toggleMenu);
   }
 
-  useEffect(() => {
-
-    const changeWidth = () => {
-      setScreenWidth(window.innerWidth);
-    }
-
-    window.addEventListener('resize', changeWidth);
-
-    return () => {
-      window.removeEventListener('resize', changeWidth);
-    }
-
-  },[])
-
   return (
     <div className="header-container">
       <div className="header-content">
