@@ -1,11 +1,8 @@
-</p>
-<h1 align="center">
-    <img alt="NextLevelWeek" title="#NextLevelWeek" src="./assets/banner.png" />
-</h1>
 
-<h4 align="center"> 
+
+<h1 align="center"> 
 	🚧  GoBeyond Desafio Final 🚀 Concluído 🚀 🚧
-</h4>
+</h1>
 
 <p align="center">
  <a href="#-sobre-o-projeto">Sobre</a> •
